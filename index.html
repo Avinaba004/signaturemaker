@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Signature Creator</title>
+    <link rel="Stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card text-center bg-dark" style="padding-top: 10px;">
+            <div class="card-header">
+             <h2 class="glow-text" style="color: white;">Generate Your Signature</h2>
+            </div>
+            <div class="card-body">
+            <div class="customize">
+                <div class="block">
+                    <p>Text Color</p>
+                    <input class="form-control" type="color" id="colorPicker">
+                </div>
+                <div class="block">
+                    <p>Canvas Background</p>
+                    <input class="form-control" type="color" id="canvasColor" value="#ffffff" >
+                </div>
+                <div class="block">
+                    <p>Font Size</p>
+                    <input type="range" class="form-control-range" id="lineWidthSlider" min="1" max="8" value="1">
+                    <span id="lineWidthValue">1</span>
+                </div>
+            </div>
+              <canvas class="canvas" id="myCanvas"></canvas>
+            </div>
+            <div class="card-footer text-body-secondary" style="padding-bottom: 20px;">
+                <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+                <button type="button" class="btn btn-success" id="downloadButton">Download</button>
+            </div>
+          </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

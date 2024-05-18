@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(30, 64, 84);
+    background: radial-gradient(circle, rgba(2,55,87,1) 0%, rgba(116,251,252,1) 100%); 
+}
+
+.canvas {
+height: 420px;
+width: 850px;
+border: 5px solid rgb(30, 64, 84);
+box-shadow: 0 0 8px 3px rgb(30, 64, 84);
+background-color: white;
+justify-content: center;
+
+}
+.customize{
+display: flex;
+justify-content: space-evenly;
+padding-bottom: 20px;
+}
+
+#colorPicker {
+width: 80px;
+height: 40px;
+border: 3px solid rgb(30, 64, 84);
+padding: 0;
+justify-content: center;
+}
+#canvasColor {
+width: 155px;
+height: 40px;
+border: 3px solid rgb(30, 64, 84);
+justify-self: center;
+padding: 0;
+}
+#lineWithSlier {
+border: 3px solid rgb(30, 64, 84);
+}
+
+p{
+color: white;
+}
+
+button{
+background-color: rgb(30, 64, 84);
+}
+button:hover{
+border-color: rgb(30, 64, 84);
+box-shadow: 0 0 10px 5px rgb(30, 64, 84); 
+}
+
+.glow-text {
+color: rgb(30, 64, 84); 
+text-shadow: 0 0 10px rgb(30, 64, 84), 0 0 20px rgb(30, 64, 84), 0 0 30px rgb(30, 64, 84); 
+}
+
+@media only screen and (max-width: 768px) {
+
+.container {
+    padding: 0;
+}
+.card {
+    width: 90%;
+    margin: auto;
+}
+.block {
+    flex: 0 0 45%; 
+}
+}
+
+@media only screen and (max-width: 576px) {
+
+.card {
+    padding: 20px;
+}
+.customize {
+    flex-direction: column;
+    align-items: center;
+}
+#colorPicker,
+#canvasColor,
+#lineWidthSlider {
+    max-width: 100%;
+}
+}
